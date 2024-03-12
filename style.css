@@ -1,0 +1,237 @@
+.responsive-bg-img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh; 
+    display: block; 
+    margin: 0 auto; 
+  }
+
+*{
+    box-sizing: border-box;
+}
+
+.h1{
+    text-align: center;
+    padding-top: 20px;
+    color: #f05223;
+}
+
+a {
+    text-decoration: none;
+    color: #c2c1c1;
+  }
+
+/* Lists */
+.li-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.no-bullets{
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    text-align: center;
+    background-color: #012c36;
+}
+
+.no-bullets li{
+    display: inline-block;
+    font-style: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #cd5a27;
+    width: 15%;
+    padding-top: 15px;
+}
+
+.no-bullets2{
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.no-bullets2 li{
+    display: inline-block;
+    font-style: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    width: 15%;
+    padding-top: 15px;
+    margin: 40px;
+}
+
+.no-bullets3{
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 0;
+    text-align: left;
+    background-color: #012c36;
+    
+}
+
+.no-bullets3 li{
+    display: inline-block;
+    font-style: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    width: 12%;
+    padding-top: 15px;
+    margin: 40px;
+    
+}
+
+.no-bullets3 li button{
+    color: grey;
+    background-color: transparent;
+}
+
+.no-bullets li p{
+    color: aliceblue;
+}
+
+.testimonial-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 80px;
+  }
+
+  .testimonial-item {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid rgb(206, 206, 206);
+    border-bottom: 3px solid #6a8fc8;
+  }
+
+  .testimonial-item h3 {
+    margin: 0;
+    font-size: 25px;
+    color: #6a8fc8;
+    text-align: center;
+  }
+
+  .testimonial-item p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .testimonial-item sub {
+    color: grey;
+    display: block;  
+    text-align: center;
+    margin-top: 7px;  
+  }
+/* image gallery */
+.responsive-img {
+    width: 20%;
+    height: 270px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .gallery {
+    position: relative;
+  }
+
+.responsive-img .gallery img{
+    width: 100%;
+    height: auto;
+}
+
+.responsive-img .gallery .desc{
+    padding: 15px;
+    text-align: center;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
+/* Team leads image */
+
+.responsive-img-teamleads {
+    padding: 0 6px;
+    display: inline-block;
+    justify-content: center;
+
+    width: 20%;
+}
+.responsive-img-teamleads .gallery img{
+    width: 100%;
+    height: auto;
+}
+
+.responsive-img-teamleads .gallery .desc{
+    padding: 15px;
+    text-align: center;
+}
+
+/* Form Styles */
+
+
+/* For Responsiveness */
+
+@media only screen and (max-width: 700px) {
+    .responsive-img{
+        width: 50%;
+        margin: 15px 0;
+    }
+    .responsive-img-teamleads{
+        width: 60%;
+    }
+    .no-bullets li{
+        display: block;
+        width: 100%;
+        padding: 25px;
+        padding-left: 0;
+    }
+    .no-bullets2 li{
+        display: block;
+        width: 100%;
+        padding: 25px;
+        padding-left: 0;
+        margin: 0;
+    }
+    .no-bullets3 li{
+        display: block;
+        width: 100%;
+        padding: 5px;
+        padding-left: 0;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .responsive-img{
+        width: 100%;
+        margin: 15px 0;
+    }
+    .responsive-img-teamleads{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .testimonial-item {
+      width: 48%;
+      margin-top: 30px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .testimonial-item {
+      width: 30%;
+      margin-top: 30px;
+    }
+  }
+
